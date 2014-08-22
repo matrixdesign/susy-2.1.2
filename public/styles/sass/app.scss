@@ -1,0 +1,17 @@
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: isolate,
+  gutter-position: after,
+  container: 1200px,
+  container-position: center,
+);
+
+.page-container{
+	@include layout($susy);
+	@include container(show);
+	height:700px;
+}
